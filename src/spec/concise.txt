@@ -1,0 +1,5 @@
+USAGE:
+    [ --help | --markup ]
+    "Some Text"
+    [ (f|b)( [b] <r|g|b|c|m|y|k> ) | ( <u8> | <u8,u8,u8> | <2|3|6-digit># ) ]
+    [ m <b,d,i,u,k,v,h,s,l,o> ]
