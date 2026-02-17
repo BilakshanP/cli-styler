@@ -1,0 +1,13 @@
+[package]
+name = "cli-styler"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+cli = []
+markup = []
+serde = ["dep:serde"]
+
+[dependencies]
+thiserror = "2.0.12"
+serde = { version = "1.0.219", optional = true, features = ["serde_derive"] }

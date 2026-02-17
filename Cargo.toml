@@ -1,18 +1,4 @@
-[package]
-name = "cli-styler"
-version = "0.1.0"
-edition = "2024"
-
-[features]
-cli = []
-markup = []
-serde = ["dep:serde"]
-
-[dependencies]
-thiserror = "2.0.12"
-serde = { version = "1.0.219", optional = true, features = ["serde_derive"] }
-
-[[bin]]
-name = "style"
-path = "src/bin/main.rs"
-required-features = ["cli"]
+[workspace]
+resolver = "3"
+members = ["core", "cli"]
+# default-members = ["cli"]
